@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-const SPEED = 900
+const SPEED = 1200
 const JUMP_VELOCITY = -999
 
 
@@ -13,7 +13,11 @@ func _physics_process(delta: float) -> void:
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
+		$jumpthing.play()
 
+	if Input.is_action_just_pressed("fart"):
+		$fart.play()
+	
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction := Input.get_axis("left", "right")
@@ -23,3 +27,4 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+	

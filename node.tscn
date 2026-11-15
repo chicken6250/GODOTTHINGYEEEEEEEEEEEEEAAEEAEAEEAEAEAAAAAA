@@ -2,29 +2,29 @@
 
 [ext_resource type="Script" uid="uid://d1l6816jsihmc" path="res://node.gd" id="1_f0urt"]
 [ext_resource type="Script" uid="uid://bss4mgihbqfdc" path="res://character_body_2d.gd" id="1_j2q8x"]
-[ext_resource type="Texture2D" uid="uid://cr4nney870mnt" path="res://Character-1.png.png" id="3_r657h"]
+[ext_resource type="Texture2D" uid="uid://clapkdoe7nxw1" path="res://Character V2-1.png.png" id="3_f0urt"]
 [ext_resource type="AudioStream" uid="uid://cioumj3s0rbiy" path="res://fart-with-reverb.mp3" id="4_bss38"]
-[ext_resource type="Texture2D" uid="uid://7qi5pw1jalrl" path="res://Character-2.png.png" id="4_f0urt"]
-[ext_resource type="Texture2D" uid="uid://bxwgo6rl6lj45" path="res://Character-3.png.png" id="5_jfkdj"]
+[ext_resource type="Texture2D" uid="uid://cb4myfih6rcrv" path="res://Character V2-2.png.png" id="4_jfkdj"]
 [ext_resource type="Texture2D" uid="uid://bqi431i30r8ul" path="res://IMG_6058.png" id="5_tda05"]
+[ext_resource type="Texture2D" uid="uid://c68y30drpl4ll" path="res://Character V2-3.png.png" id="5_wt6go"]
+[ext_resource type="Texture2D" uid="uid://cu60hydwb51g5" path="res://Character V2-4.png.png" id="6_436f3"]
 [ext_resource type="AudioStream" uid="uid://yfi4rtrdvihn" path="res://Record (online-voice-recorder.com)(1).mp3" id="6_l6pdb"]
-[ext_resource type="Texture2D" uid="uid://c4nr24hpahom1" path="res://Character-4.png.png" id="6_wt6go"]
 [ext_resource type="AudioStream" uid="uid://bk08vda7fexwq" path="res://5083822726709248.wav" id="10_jfkdj"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_delwc"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_r657h")
+"texture": ExtResource("3_f0urt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_f0urt")
+"texture": ExtResource("4_jfkdj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_jfkdj")
+"texture": ExtResource("5_wt6go")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_wt6go")
+"texture": ExtResource("6_436f3")
 }],
 "loop": 1,
 "name": &"default",
@@ -32,7 +32,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5lfcx"]
-size = Vector2(39, 136)
+size = Vector2(82, 124)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l6pdb"]
 texture = ExtResource("5_tda05")
@@ -153,20 +153,18 @@ jumps = 3
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=656451517]
 z_index = 10
 position = Vector2(18, 183)
-scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_delwc")
 autoplay = "default"
-frame_progress = 0.2536011
+frame_progress = 0.6143991
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=819774028]
 z_index = -2
-position = Vector2(15.5, 224)
+position = Vector2(18, 230)
 shape = SubResource("RectangleShape2D_5lfcx")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1303901274]
 position = Vector2(4, -8)
 offset = Vector2(0, 200)
-zoom = Vector2(0.5, 0.5)
 position_smoothing_enabled = true
 position_smoothing_speed = 3.0
 drag_vertical_enabled = true

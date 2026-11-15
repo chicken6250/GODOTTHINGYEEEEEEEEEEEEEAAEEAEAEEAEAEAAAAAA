@@ -145,7 +145,7 @@ sources/1 = SubResource("TileSetAtlasSource_l6pdb")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=463366891]
 script = ExtResource("1_j2q8x")
-jumps = 2
+jumps = 3
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=656451517]
 z_index = 10

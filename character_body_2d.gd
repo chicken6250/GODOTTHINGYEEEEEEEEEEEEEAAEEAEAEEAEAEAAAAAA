@@ -3,7 +3,7 @@ extends CharacterBody2D
 
 const SPEED = 1200
 const JUMP_VELOCITY = -750
-@export var jumps = 1
+@export var jumps =1
 var e=0
 
 func _physics_process(delta: float) -> void:
@@ -12,7 +12,7 @@ func _physics_process(delta: float) -> void:
         velocity += get_gravity() * delta
 
     # Handle jump.
-    if Input.is_action_just_pressed("jump") and not jumps == e:
+    if Input.is_action_just_pressed("jump") and not jumps == e+1:
         velocity.y = JUMP_VELOCITY
         $jumpthing.play()
         e=e+1

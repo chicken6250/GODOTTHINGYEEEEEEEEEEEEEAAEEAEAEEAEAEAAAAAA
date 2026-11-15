@@ -8,6 +8,9 @@ var e=0
 var o=0
 var p=0
 func _physics_process(delta: float) -> void:
+	
+
+
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -42,4 +45,3 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
-	

@@ -2,9 +2,9 @@ extends CharacterBody2D
 
 
 const SPEED = 1200
-const JUMP_VELOCITY = -900
+const JUMP_VELOCITY = -750
 @export var jumps = 1
-var e=1
+var e=0
 
 func _physics_process(delta: float) -> void:
     # Add the gravity.
@@ -17,7 +17,7 @@ func _physics_process(delta: float) -> void:
         $jumpthing.play()
         e=e+1
     if is_on_floor():
-        e=1
+        e=0
 
 
     if Input.is_action_just_pressed("fart"):

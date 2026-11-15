@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bqi431i30r8ul" path="res://IMG_6058.png" id="5_tda05"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5lfcx"]
-size = Vector2(174, 384)
+size = Vector2(101, 202)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l6pdb"]
 texture = ExtResource("5_tda05")
@@ -124,19 +124,21 @@ sources/1 = SubResource("TileSetAtlasSource_l6pdb")
 script = ExtResource("1_j2q8x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=819774028]
-position = Vector2(-1, 227)
+z_index = -2
+position = Vector2(6.5, 206)
 shape = SubResource("RectangleShape2D_5lfcx")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1303901274]
 position = Vector2(4, -8)
-zoom = Vector2(0.25, 0.25)
+offset = Vector2(0, 200)
+zoom = Vector2(0.5, 0.5)
 position_smoothing_enabled = true
 position_smoothing_speed = 3.0
 drag_vertical_enabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=355957571]
 position = Vector2(16, 184.5)
-scale = Vector2(0.9375, 0.9238281)
+scale = Vector2(0.5, 0.493)
 texture = ExtResource("2_112p8")
 
 [node name="jumpthing" type="AudioStreamPlayer" parent="CharacterBody2D" unique_id=1303758314]

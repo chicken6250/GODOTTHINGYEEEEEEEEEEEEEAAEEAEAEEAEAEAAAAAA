@@ -1,12 +1,12 @@
 [gd_scene format=4 uid="uid://bhss2rc30pepk"]
 
 [ext_resource type="Script" uid="uid://bss4mgihbqfdc" path="res://character_body_2d.gd" id="1_j2q8x"]
-[ext_resource type="AudioStream" uid="uid://1ewsxwkydqe6" path="res://Record (online-voice-recorder.com).mp3" id="3_e2u21"]
 [ext_resource type="Texture2D" uid="uid://cr4nney870mnt" path="res://Character-1.png.png" id="3_r657h"]
 [ext_resource type="AudioStream" uid="uid://cioumj3s0rbiy" path="res://fart-with-reverb.mp3" id="4_bss38"]
 [ext_resource type="Texture2D" uid="uid://7qi5pw1jalrl" path="res://Character-2.png.png" id="4_f0urt"]
 [ext_resource type="Texture2D" uid="uid://bxwgo6rl6lj45" path="res://Character-3.png.png" id="5_jfkdj"]
 [ext_resource type="Texture2D" uid="uid://bqi431i30r8ul" path="res://IMG_6058.png" id="5_tda05"]
+[ext_resource type="AudioStream" uid="uid://yfi4rtrdvihn" path="res://Record (online-voice-recorder.com)(1).mp3" id="6_l6pdb"]
 [ext_resource type="Texture2D" uid="uid://c4nr24hpahom1" path="res://Character-4.png.png" id="6_wt6go"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_delwc"]
@@ -145,6 +145,7 @@ sources/1 = SubResource("TileSetAtlasSource_l6pdb")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=463366891]
 script = ExtResource("1_j2q8x")
+jumps = 2
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=656451517]
 z_index = 10
@@ -168,7 +169,7 @@ position_smoothing_speed = 3.0
 drag_vertical_enabled = true
 
 [node name="jumpthing" type="AudioStreamPlayer" parent="CharacterBody2D" unique_id=1303758314]
-stream = ExtResource("3_e2u21")
+stream = ExtResource("6_l6pdb")
 volume_db = 3.059
 
 [node name="fart" type="AudioStreamPlayer" parent="CharacterBody2D" unique_id=1426972105]
